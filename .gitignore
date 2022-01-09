@@ -1,4 +1,9 @@
 ### AL ###
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
 .vscode/
