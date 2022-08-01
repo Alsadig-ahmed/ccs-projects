@@ -1,14 +1,13 @@
 name: Build and Deploy
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    concurrency: ci-${{ github.ref }}
+    # concurrency: ci-${{ github.ref }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
