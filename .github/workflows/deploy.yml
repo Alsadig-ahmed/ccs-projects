@@ -15,8 +15,8 @@ jobs:
 
         - name: Install and Build 🔧
           run: |
-            sudo npm i -g pnpm
-            pnpm ci
+            sudo npm i --location=global pnpm
+            pnpm i
             pnpm run build
 
         - name: Deploy 🚀
